@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#070b1d">
+  <meta name="description" content="NEXOR STORE — tools digital dan panduan Free Fire buatan kreator untuk sensitivitas, HUD, dan latihan.">
+  <title>NEXOR STORE — Galaxy Gaming Tools</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Orbitron:wght@500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="splash-screen" id="splashScreen" role="status" aria-live="polite" aria-label="Loading NXRPLOIT STORE">
+    <div class="splash-orbit splash-orbit-one" aria-hidden="true"></div>
+    <div class="splash-orbit splash-orbit-two" aria-hidden="true"></div>
+    <div class="splash-core"><img src="nxrploit-logo.svg" alt=""></div>
+    <p class="splash-brand">NXRPLOIT</p>
+    <p class="splash-caption">ENTERING THE UNIVERSE</p>
+    <div class="splash-loader" aria-hidden="true"><span></span></div>
+    <p class="splash-status">INITIALIZING STORE <span>·</span> <strong id="splashPercent">00%</strong></p>
+  </div>
+  <canvas id="starfield" aria-hidden="true"></canvas>
+  <div class="pointer-glow" id="pointerGlow" aria-hidden="true"></div>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <span><i class="fa-solid fa-satellite"></i> NEXOR STORE <span class="top-separator">/</span> DIGITAL TOOLS FOR NEXT-LEVEL PLAY</span>
+      <div class="top-links">
+        <a href="#features"><i class="fa-solid fa-circle-info"></i> Tentang</a>
+        <a href="#catalog"><i class="fa-solid fa-arrow-down"></i> Jelajahi store</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#" class="logo">
+        <img class="logo-mark" src="nxrploit-logo.svg" alt="" width="44" height="44">
+        <span class="logo-text">NXRPLOIT<span class="logo-subtitle">NEXOR STORE</span></span>
+      </a>
+
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search the universe..." aria-label="Cari produk">
+        <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+
+      <div class="header-actions">
+        <button class="motion-toggle" id="motionToggle" type="button" aria-pressed="false" aria-label="Turn galaxy motion on" title="Turn galaxy motion on">
+          <i class="fa-solid fa-circle-play" aria-hidden="true"></i><span>MOTION OFF</span>
+        </button>
+        <button class="action-btn" id="cartToggle">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="badge" id="cartCount">0</span>
+        </button>
+        <a class="btn btn-primary header-cta" href="#catalog">Explore store <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <span class="hero-tag"><span class="status-dot"></span> NXRPLOIT STORE</span>
+        <h1>CHOOSE YOUR<br><span>ACCESS.</span></h1>
+        <p class="hero-lead">Premium configurations, tools, and settings for iOS, Android, and PC.</p>
+        <div class="hero-buttons">
+          <a href="#catalog" class="btn btn-primary btn-lg"><i class="fa-solid fa-arrow-down"></i> EXPLORE PRODUCTS</a>
+          <a class="btn btn-outline btn-lg" href="https://wa.me/6281213768262?text=Halo%20NEXOR%20STORE%2C%20saya%20ingin%20bertanya%20tentang%20tools" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> Chat admin</a>
+        </div>
+        <div class="hero-note"><i class="fa-solid fa-circle-info"></i> Third-party digital products <span>•</span> review compatibility first</div>
+      </div>
+      <div class="hero-banner" id="cosmicScene" aria-label="Animasi orbit galaksi NEXOR">
+        <div class="scene-caption"><span><i class="fa-solid fa-satellite-dish"></i> NEXOR OBSERVATORY</span><span>COLLECTION 01 <i class="fa-solid fa-signal"></i></span></div>
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="orbit orbit-three"></div>
+        <div class="planet-halo"></div>
+        <div class="planet-core"><img class="planet-emblem" src="nxrploit-logo.svg" alt="NXRPLOIT — siluet penjaga universe"></div>
+        <div class="scene-coordinate coordinate-one">NEXOR<br>COLLECTION 01</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="free-access-promo" id="freeAccess" aria-labelledby="freeAccessTitle">
+    <div class="container free-access-inner">
+      <div class="free-access-orbit" aria-hidden="true"><span></span></div>
+      <div class="free-access-copy">
+        <span class="free-access-kicker">NXRPLOIT · OPEN ACCESS</span>
+        <h2 id="freeAccessTitle">FREE ACCESS</h2>
+        <p class="free-access-price">Rp0 <span>· GRATIS</span></p>
+        <p class="free-access-description">Tanyakan detail paket akses gratis langsung kepada admin.</p>
+      </div>
+      <a class="free-access-cta" href="https://wa.me/6281213768262?text=Halo%20NXRPLOIT%20RANZY%20DEV%2C%20saya%20ingin%20bertanya%20tentang%20FREE%20ACCESS" target="_blank" rel="noopener noreferrer">
+        GET FREE ACCESS <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      </a>
+    </div>
+  </section>
+
+  <div class="orbit-marquee" aria-label="Kategori tools NEXOR STORE">
+    <div class="marquee-track"><span>IOS COLLECTION <i>✦</i></span><span>ANDROID COLLECTION <i>✦</i></span><span>FLEXIBLE ACCESS OPTIONS <i>✦</i></span><span>NXRPLOIT STORE <i>✦</i></span><span>IOS COLLECTION <i>✦</i></span><span>ANDROID COLLECTION <i>✦</i></span><span>FLEXIBLE ACCESS OPTIONS <i>✦</i></span><span>NXRPLOIT STORE <i>✦</i></span></div>
+  </div>
+
+  <!-- Categories & Catalog -->
+  <section class="catalog-section" id="catalog">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <span class="section-kicker"><i class="fa-solid fa-asterisk"></i> NXRPLOIT STORE · THE COSMIC ARCHIVE</span>
+          <h2>Explore the <span>collection.</span></h2>
+          <p>Explore digital products for iOS, Android, and PC. Available access options are listed on each product.</p>
+        </div>
+        <div class="categories-filter" id="categoriesFilter">
+          <button class="filter-btn active" data-category="All">ALL</button>
+          <button class="filter-btn" data-category="iOS">iOS</button>
+          <button class="filter-btn" data-category="Android">ANDROID</button>
+          <button class="filter-btn" data-category="PC">PC</button>
+          <button class="filter-btn" data-category="iOS-Tools">iOS TOOLS</button>
+          <button class="filter-btn" data-category="Android-Tools">ANDROID TOOLS</button>
+          <button class="filter-btn" data-category="Settings">SETTINGS</button>
+        </div>
+      </div>
+
+      <section class="pc-collection-intro" id="pcCollectionIntro" hidden aria-labelledby="pcCollectionTitle">
+        <span class="section-kicker">NXRPLOIT PC</span>
+        <h2 id="pcCollectionTitle">PC ACCESS</h2>
+        <p>Advanced PC panels and tools with flexible access options.</p>
+        <a class="pc-explore-link" href="#productGrid">EXPLORE PC PRODUCTS <i class="fa-solid fa-arrow-down"></i></a>
+      </section>
+
+      <div class="tier-filter" id="tierFilter" aria-label="Filter product tier">
+        <span class="tier-filter-label">FILTER</span>
+        <button class="tier-btn active" data-tier="All">ALL</button>
+        <button class="tier-btn" data-tier="ENTRY">ENTRY</button>
+        <button class="tier-btn" data-tier="ADVANCED">ADVANCED</button>
+        <button class="tier-btn" data-tier="PREMIUM">PREMIUM</button>
+        <button class="tier-btn" data-tier="PRIVATE">PRIVATE</button>
+      </div>
+
+      <p class="catalog-notice"><i class="fa-solid fa-circle-info"></i> Product claims and feature descriptions are provided by the seller. Confirm compatibility and usage requirements with the store before purchase. NXRPLOIT STORE is not affiliated with Garena.</p>
+
+      <!-- Product Grid -->
+      <div class="product-grid" id="productGrid">
+        <!-- Dynamic Content from JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Banner -->
+  <section class="features" id="features">
+    <div class="container features-grid">
+      <div class="feature-item">
+        <i class="fa-solid fa-user-gear"></i>
+        <h3>iOS & Android</h3>
+        <p>Jelajahi koleksi berdasarkan platform dan baca rincian sebelum memilih produk.</p>
+      </div>
+      <div class="feature-item">
+        <i class="fa-solid fa-book-open"></i>
+        <h3>Access options</h3>
+        <p>Produk iOS dan Android memakai lifetime key; produk PC menyediakan opsi akses sesuai durasinya.</p>
+      </div>
+      <div class="feature-item">
+        <i class="fa-solid fa-shield-halved"></i>
+        <h3>Review before checkout</h3>
+        <p>Klaim fitur dan keamanan berasal dari penjual. Konfirmasi detail dan kepatuhan penggunaan sebelum membeli.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Modal Drawer -->
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <h3><i class="fa-solid fa-cart-shopping"></i> Keranjang Belanja</h3>
+      <button class="close-btn" id="closeCart">&times;</button>
+    </div>
+    <div class="cart-body" id="cartItems">
+      <p class="empty-cart">Keranjangmu masih kosong.</p>
+    </div>
+    <div class="cart-footer">
+      <div class="total-row">
+        <span>Total Harga:</span>
+        <span class="total-price" id="cartTotal">Rp 0</span>
+      </div>
+      <button class="btn btn-primary btn-block" id="checkoutBtn"><i class="fa-solid fa-wallet"></i> Checkout via WhatsApp</button>
+    </div>
+  </div>
+  <div class="overlay" id="overlay"></div>
+
+  <dialog class="product-dialog" id="productDialog" aria-labelledby="detailName">
+    <div class="product-dialog-shell">
+      <button class="detail-close" id="closeProductDialog" aria-label="Tutup detail produk"><i class="fa-solid fa-xmark"></i></button>
+      <div class="detail-visual"><img id="detailImage" src="nxrploit-logo.svg" alt="NXRPLOIT"><span class="detail-orbit detail-orbit-one"></span><span class="detail-orbit detail-orbit-two"></span><span class="detail-visual-label"><i class="fa-solid fa-asterisk"></i> NXRPLOIT STORE</span></div>
+      <div class="detail-content"><span class="detail-platform" id="detailPlatform"></span><span class="detail-type" id="detailType"></span><span class="product-badge" id="detailBadge"></span><span class="detail-rate" id="detailRate"></span><h2 id="detailName"></h2><p id="detailDescription"></p><span class="feature-label" id="detailFeatureLabel">FEATURES</span><ul class="detail-features" id="detailFeatures"></ul><div class="detail-access-selector" id="detailAccessSelector" hidden><span class="feature-label">ACCESS PERIOD</span><div class="access-option-list" id="detailAccessOptions"></div></div><div class="detail-access"><span class="lifetime-badge" id="detailAccessBadge">LIFETIME ACCESS</span><span id="detailAccessCopy">PERMANENT • LIFETIME ACCESS KEY</span></div><div class="detail-purchase"><div class="detail-price-wrap"><strong id="detailPrice"></strong><del class="price-original" id="detailOriginalPrice" hidden></del></div><button class="btn btn-primary" id="detailAddToCart"></button></div></div>
+    </div>
+  </dialog>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="footer-logo" href="#"><img src="nxrploit-logo.svg" alt="" width="48" height="48"><span>NXRPLOIT<small>NEXOR STORE</small></span></a>
+        <div class="owner-profile"><span class="owner-check" aria-hidden="true"><i class="fa-solid fa-check"></i></span><span><strong>NXRPLOIT RANZY DEV</strong><small>STORE OWNER &amp; DEVELOPER</small></span><span class="owner-badge">OWNER</span></div>
+        <p>Digital tools dan panduan original untuk membantu pemain Free Fire membangun setup dan latihan sesuai gaya mainnya.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigasi</h4>
+        <ul>
+          <li><a href="#">Beranda</a></li>
+          <li><a href="#catalog">Explore store</a></li>
+          <li><a href="#features">Tentang kami</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Hubungi Kami</h4>
+        <ul>
+          <li><a href="https://wa.me/6281213768262" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> WhatsApp: 0812-1376-8262</a></li>
+          <li><i class="fa-solid fa-envelope"></i> Produk digital</li>
+          <li><i class="fa-solid fa-gamepad"></i> Fan-made, bukan produk resmi Garena</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 NEXOR STORE. Produk fan-made; tidak berafiliasi dengan Garena atau Free Fire.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/6281213768262?text=Halo%20NEXOR%20STORE%2C%20saya%20ingin%20bertanya" target="_blank" rel="noopener noreferrer" aria-label="Chat NEXOR STORE via WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i><span>Chat admin</span><b class="whatsapp-pulse"></b>
+  </a>
+
+  <script src="app.js"></script>
+</body>
+</html>

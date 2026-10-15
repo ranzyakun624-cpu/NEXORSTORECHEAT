@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">NXRPLOIT — The Universe Keeper</title>
+  <desc id="desc">Siluet iblis hitam bertanduk memegang bola kosmik bercahaya.</desc>
+  <defs>
+    <radialGradient id="medallion" cx="39%" cy="29%" r="78%">
+      <stop offset="0" stop-color="#e4eeff"/>
+      <stop offset=".38" stop-color="#819bc4"/>
+      <stop offset="1" stop-color="#18243f"/>
+    </radialGradient>
+    <radialGradient id="universe" cx="31%" cy="27%" r="75%">
+      <stop offset="0" stop-color="#f5fdff"/>
+      <stop offset=".21" stop-color="#a6e9ff"/>
+      <stop offset=".57" stop-color="#688fff"/>
+      <stop offset="1" stop-color="#7043c7"/>
+    </radialGradient>
+    <linearGradient id="orbit" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#c5f5ff" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#a88bff" stop-opacity=".58"/>
+    </linearGradient>
+    <clipPath id="disc"><circle cx="64" cy="64" r="60"/></clipPath>
+  </defs>
+  <circle cx="64" cy="64" r="62" fill="#080c18" stroke="#9db9e3" stroke-opacity=".55" stroke-width="1.5"/>
+  <g clip-path="url(#disc)">
+    <circle cx="64" cy="64" r="60" fill="url(#medallion)"/>
+    <circle cx="64" cy="64" r="53" fill="none" stroke="#e8f2ff" stroke-opacity=".16"/>
+    <path d="M10 75c19-20 43-29 69-27 18 1 31 7 42 17" fill="none" stroke="url(#orbit)" stroke-opacity=".62" stroke-width="1.1"/>
+    <path d="M17 39c22 15 48 22 75 17 12-2 22-7 31-14" fill="none" stroke="#e4f4ff" stroke-opacity=".27" stroke-width=".8"/>
+    <circle cx="64" cy="25" r="21" fill="none" stroke="url(#orbit)" stroke-opacity=".68" stroke-width="1.4"/>
+    <circle cx="64" cy="25" r="15.6" fill="url(#universe)" stroke="#f1fbff" stroke-opacity=".7" stroke-width="1"/>
+    <path d="M53 27c4-7 10-10 17-9 4 1 7 3 9 6-6-2-10-1-13 3-4 4-8 5-13 4 2-1 2-2 0-4Z" fill="#d9c6ff" fill-opacity=".75"/>
+    <circle cx="59" cy="19" r="1.25" fill="#fff"/>
+    <circle cx="72" cy="29" r=".85" fill="#fff" fill-opacity=".9"/>
+    <circle cx="68" cy="15" r=".65" fill="#fff" fill-opacity=".8"/>
+    <!-- Raised arms and hands: one continuous shadow silhouette holding the universe. -->
+    <path d="M45 80c-5-5-8-11-10-18l-6-16c-.8-2.5.2-4.5 2.2-5.1 2-.6 3.8.7 4.8 3.2l5.3 12.2-2.4-17.5c-.4-2.8.9-4.7 3-4.9 2.2-.2 3.6 1.5 3.9 4.2l2.2 15.4 1.3-12c.3-2.6 1.7-4 3.7-3.8 2 .2 3 1.9 2.7 4.5l-1.2 15.6 4.1 6.1 4.1-6.1-1.2-15.6c-.3-2.6.7-4.3 2.7-4.5 2-.2 3.4 1.2 3.7 3.8l1.3 12 2.2-15.4c.3-2.7 1.7-4.4 3.9-4.2 2.1.2 3.4 2.1 3 4.9l-2.4 17.5 5.3-12.2c1-2.5 2.8-3.8 4.8-3.2 2 .6 3 2.6 2.2 5.1l-6 16c-2.3 7-5.6 12.8-10.4 17.8l-2.7 6.8H48l-3-6.5Z" fill="#03050b"/>
+    <!-- Distinct horned demon, shoulders and cloak: the tiny cyan eyes keep the silhouette readable at favicon size. -->
+    <path d="M47 62c-4-6-6.7-14.2-8-23 6.8 3.5 11.9 7.1 15.5 12.1-.1-7.1-3.1-15.4-7.2-22.1 10.1 3.5 15.4 10 16.7 18.2 1.3-8.2 6.6-14.7 16.7-18.2-4.1 6.7-7.1 15-7.2 22.1 3.6-5 8.7-8.6 15.5-12.1-1.3 8.8-4 17-8 23 4.3 4 6.2 8.8 5.5 13.8-.8 5.2-4.3 9-9.4 11.8l12.2 23.4c-8.1 3.9-16.6 5.8-25.3 5.8s-17.2-1.9-25.3-5.8l12.2-23.4c-5.1-2.8-8.6-6.6-9.4-11.8-.7-5 1.2-9.8 5.5-13.8Z" fill="#03050b"/>
+    <path d="m53.5 65.8 8 1.5-7.1 2.3Zm21 0-8 1.5 7.1 2.3Z" fill="#8feaff" fill-opacity=".86"/>
+    <path d="M57 74c2.1 1.1 4.4 1.6 7 1.6s4.9-.5 7-1.6" fill="none" stroke="#27354f" stroke-opacity=".72" stroke-width="1.1"/>
+    <path d="M49 111h30" stroke="#dceaff" stroke-opacity=".28" stroke-width="1"/>
+    <circle cx="20" cy="26" r="1" fill="#f3f7ff" fill-opacity=".8"/>
+    <circle cx="106" cy="33" r="1.1" fill="#d9ccff" fill-opacity=".8"/>
+    <circle cx="104" cy="93" r=".9" fill="#fff" fill-opacity=".75"/>
+    <circle cx="26" cy="91" r=".8" fill="#fff" fill-opacity=".65"/>
+  </g>
+</svg>
